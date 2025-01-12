@@ -1,0 +1,38 @@
+﻿@page
+@model P_Galchis_Cristian.Pages.Obiective.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalii Obiectiv";
+}
+
+<h1>Detalii Obiectiv</h1>
+
+<div>
+    <h4>Obiectiv</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Obiectiv.Denumire)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Obiectiv.Denumire)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Obiectiv.Adresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Obiectiv.Adresa)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Obiectiv.Pret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Obiectiv.Pret)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Obiectiv.ID">Edit</a> |
+    <a asp-page="./Index">Back To List</a>
+</div>
